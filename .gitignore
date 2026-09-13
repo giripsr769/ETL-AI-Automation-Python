@@ -1,0 +1,59 @@
+gitignore_content = """# Python environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Environment variables & Sensitive data
+.env
+.env.local
+.env.*.local
+
+# Data & CSV files (Raw and Cleaned data)
+student_enrollment_raw.csv
+cleaned_data.csv
+*.csv
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs & temporary files
+*.log
+*.tmp
+"""
+
+with open(".gitignore", "w", encoding="utf-8") as f:
+    f.write(gitignore_content)
+
+print(".gitignore generated successfully.")
